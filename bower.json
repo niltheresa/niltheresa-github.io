@@ -1,0 +1,18 @@
+{
+  "name": "niltheresa.github.io",
+  "homepage": "https://github.com/niltheresa/niltheresa.github.io",
+  "authors": [
+    "Ipul <ipulrvs@gmail.com>"
+  ],
+  "description": "Public Github Pages Repository",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
