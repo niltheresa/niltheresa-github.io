@@ -1,12 +1,133 @@
 <html>
 <head>
-	<title>Website</title>
+	<title>Lanscare</title>
+
+	<link rel="stylesheet" type="text/css" href="source/material.css">
+	<link rel="stylesheet" type="text/css" href="source/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="source/style.css">
+	<style type="text/css">
+		.mdl-card {
+			width: 100% !important;
+		}
+
+		.mdl-card img {
+			width: 100% !important;
+		}
+	</style>
 </head>
 <body>
 
-	Hello My Pages Ipul Knightweignt !.
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	    <!-- Title -->
+	    <span class="mdl-layout-title">Home</span>
+	    <!-- Add spacer, to align navigation to the right -->
+	    <div class="mdl-layout-spacer"></div>
+	    	<!-- Navigation. We hide it in small screens. -->
+	    	<nav class="mdl-navigation mdl-layout--large-screen-only">
+	    		<a class="mdl-navigation__link" href=""><i class="material-icons">group</i> Facebook</a>
+	    	</nav>
+	    </div>
+	</header>
+	<div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">Niche Topic</span>
+		<nav class="mdl-navigation">
+			<a class="mdl-navigation__link" href=""></a>
+			<a class="mdl-navigation__link" href=""></a>
+			<a class="mdl-navigation__link" href=""></a>
+			<a class="mdl-navigation__link" href=""></a>
+		</nav>
+	</div>
+	<main class="mdl-layout__content">
+		<div class="page-content">
+			<div class="mdl-grid mdl-shadow--2dp" style="padding-bottom: 20px;">
+ 				<div class="mdl-cell mdl-cell--12-col" style="margin: 48px 24px; height: 320px;">
+ 					<div class="flexslider" style="height: 320px;">
+						<ul class="slides">
+							<li>
+								<img src="images/walpaper_1.jpg" style="height: 320px;"/>
+								<!-- <p class="flex-caption">Caption</p> -->
+							</li>
+							<li>
+								<img src="images/walpaper_2.jpg" style="height: 320px;"/>
+							</li>
+							<li>
+								<img src="images/walpaper_3.jpg" style="height: 320px;"/>
+							</li>
+						</ul>
+					</div>
+ 				</div>
+			</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--12-col" style="height: 120px; background: #DFDFDF; text-align: center; vertical-align: middle;">
+					<h1>Introduce you to Lanscare Community !</h1>
+				</div>
+			</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--4-col">
+					<div class="mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Lanscare Labs</h2>
+						</div>
+						<div class="mdl-card__media">
+							<img src="images/walpaper_1.jpg" height="240">
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lanscare Labs is .......
+						</div>
+						<div class="mdl-card__actions">
+							<a href="">More</a>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<div class="mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">Revisa People</h2>
+						</div>
+						<div class="mdl-card__media">
+							<img src="images/walpaper_2.jpg" height="240">
+						</div>
+						<div class="mdl-card__supporting-text">
+							Revisa People is .......
+						</div>
+						<div class="mdl-card__actions">
+							<a href="">More</a>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--4-col">
+					<div class="mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title">
+							<h2 class="mdl-card__title-text">MoeNster</h2>
+						</div>
+						<div class="mdl-card__media">
+							<img src="images/walpaper_3.jpg" height="240">
+						</div>
+						<div class="mdl-card__supporting-text">
+							MoeNster is .......
+						</div>
+						<div class="mdl-card__actions">
+							<a href="">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
 
-	<script src="script.js"></script>
+	<script src="source/jquery.js"></script>
+	<script src="source/material.js"></script>
+	<script src="source/flexslider.js"></script>
 
+	<script type="text/javascript">
+		$(function (){
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
+		});
+	</script>
 </body>
 </html>
