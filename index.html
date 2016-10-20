@@ -1,135 +1,274 @@
 <html>
 <head>
-	<title>Lanscare</title>
+	<title>Lanscare Website</title>
 
 	<link rel="stylesheet" type="text/css" href="source/material.css">
 	<link rel="stylesheet" type="text/css" href="source/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="source/style.css">
 	<style type="text/css">
-		.mdl-card {
-			width: 90% !important;
-			margin: auto;
+		.flex-control-nav {
+			display: none;
 		}
-		.mdl-card img {
+		.mdl-card {
 			width: 100% !important;
 		}
-		.space {
-			margin-top: 24px;
-			margin-bottom: 24px;
+		.mdl-cell--10-col .mdl-card__supporting-text {
+			width: 97%;
+		}
+		.mdl-cell--5-col .mdl-card__supporting-text {
+			width: 94%;
+		}
+		.mdl-cell--6-col .mdl-card__supporting-text {
+			width: 94%;
+		}
+		.mdl-cell--4-col .mdl-card__supporting-text {
+			width: 90.5%;
+		}
+		.mdl-textfield {
+			width: 100%;
 		}
 	</style>
 </head>
 <body>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-	<header class="mdl-layout__header">
-	    <div class="mdl-layout__header-row">
-	    <!-- Title -->
-	    <span class="mdl-layout-title">Home</span>
-	    <!-- Add spacer, to align navigation to the right -->
-	    <div class="mdl-layout-spacer"></div>
-	    	<!-- Navigation. We hide it in small screens. -->
-	    	<nav class="mdl-navigation mdl-layout--large-screen-only">
-	    		<a class="mdl-navigation__link" href=""><i class="material-icons">group</i> Facebook</a>
-	    	</nav>
-	    </div>
-	</header>
-	<div class="mdl-layout__drawer">
-		<span class="mdl-layout-title">Niche Topic</span>
-		<nav class="mdl-navigation">
-			<a class="mdl-navigation__link" href=""></a>
-			<a class="mdl-navigation__link" href=""></a>
-			<a class="mdl-navigation__link" href=""></a>
-			<a class="mdl-navigation__link" href=""></a>
-		</nav>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header" style="background: #3F2D5D;">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout__title">Lanscare Plan</span>
+				<div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="#home">Home</a>
+					<a class="mdl-navigation__link" href="#about">About</a>
+					<a class="mdl-navigation__link" href="#labs">Lanscare Labs</a>
+					<a class="mdl-navigation__link" href="#game">MOEnster</a>
+				</nav>
+			</div>
+		</header>
+		<main class="mdl-layout__content">
+			<div class="mdl-cell mdl-cell--12-col" style="margin: 0px !important; width: 100%; height: 540px;" id="home">
+				<div class="slideshow">
+					<ul class="slides">
+						<li>
+							<img src="images/walpaper_5.jpg" style="height: 540px; width: 100%; object-fit: cover;"/>
+						</li>
+						<li>
+							<img src="images/walpaper_5.jpg" style="height: 540px; width: 100%; object-fit: cover;"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mdl-grid" style="margin-top: -40px;">
+				<div class="mdl-cell mdl-cell--12-col">
+				<div class="slideNav">
+					<a href="#" class="flex-prev" style="float: left";>
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background: #1C2135; color: #FFFFFF;">
+							Previous
+						</button>
+					</a>
+					<div class="slideNavFunc"></div>
+					<a href="#" class="flex-next" style="float: right;">
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background: #1C2135; color: #FFFFFF;">
+							Next
+						</button>
+					</a>
+				</div>
+				</div>
+			</div>
+			<div class="mdl-grid" style="margin-top: 50px;" id="about">
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+				<div class="mdl-cell mdl-cell--10-col">
+					<div class="mdl-card mdl-shadow--4dp">
+						<div class="mdl-card__title" style="height: 150px; background: #3F2D5D;">
+						</div>
+						<div class="mdl-card__supporting-text mdl-shadow--4dp" style="background: red; height: 100px; width: 100px; border-radius: 100px; margin: 0 auto; margin-top: -100px; text-align: center;">
+						</div>
+						<div class="mdl-card__supporting-text" style="text-align: center; padding-bottom: 0px;">
+							<h4>Acep Muhamad Saepuloh</h4>
+						</div>
+						<div class="mdl-card__supporting-text" style="text-align: center; padding-top: 0px; padding-bottom: 0px;">
+							<h6 style="color: #85759C; margin-top: 0px;">Full Stack Developer</h6>
+						</div>
+						<div class="mdl-card__supporting-text" style="text-align: center;">
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background: #4867AA; color: #FFFFFF;">
+								Facebook
+							</button>
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background: #1DA1F2; color: #FFFFFF;">
+								Twiter
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+			</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+				<div class="mdl-cell mdl-cell--5-col" style="background: red;">
+					<div class="mdl-card mdl-shadow--4dp" style="height: 400px;">
+						<div class="mdl-card__supporting-text">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="age" value="22" disabled>
+								<label class="mdl-textfield__label" for="age">Age</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="job" value="Full stack Developer" disabled>
+								<label class="mdl-textfield__label" for="job">Job</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="citizenship" value="Indonesia" disabled>
+								<label class="mdl-textfield__label" for="citizenship">Citizenship</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="address" value="Kp. Tarigu" disabled>
+								<label class="mdl-textfield__label" for="address">Kp. Tarigu</label>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class="mdl-textfield__input" type="text" id="work" value="Maintance Halonasoft" disabled>
+								<label class="mdl-textfield__label" for="work">Current Work</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--5-col" style="background: blue;">
+					<div class="mdl-card mdl-shadow--4dp" style="height: 400px;">
+						<div class="mdl-card__title" style="padding-bottom: 0px;">
+							<h4>Hello Everyone,</h4>
+						</div>
+						<div class="mdl-card__supporting-text" style="text-align: justify;">
+							I am Fullstack Developer from Indonesia. I started writing code from High School.
+							I love learning new thing such as New Framework and other style code from different language.
+							My Favorite Hobby is Playing Games, I am also love watching new Series Movie especially Anime Genre.
+						</div>
+						<div class="mdl-card__supporting-text" style="text-align: justify;">
+							Take a look my Work and my Game Collections bellow.
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+			</div>
+			<div class="mdl-grid" style="margin-top: 20px;" id="labs">
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+				<div class="mdl-cell mdl-cell--10-col">
+					<div class="" style="height: 200px; background: #84749B;">
+						<h2 style="color: #FFFFFF; padding: 50px;">My Work</h2>
+					</div>
+					<div class="mdl-grid" style="margin-top: -100px;">
+						<div class="mdl-cell mdl-cell--4-col" style="background: red;">
+							<div class="mdl-card mdl-shadow--4dp" style="height: 400px;">
+								<div class="mdl-card__title" style="height: 200px; background: url('images/walpaper_1.png'); background-size: cover;">
+								</div>
+								<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
+									<strong>Hybrid Starter</strong> is application stack for creating Hybrid Application. 
+									It is complete boilerplate using <b>Loopback Framework</b> as backend you can change to another backend you like, <b>Angular 1</b> + <b>Cordova</b> + <b>Electron</b> as front end. With this base code you can compile code to Web, Desktop even Mobile Application.
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/niltheresa/hybrid-starter">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="mdl-cell mdl-cell--4-col">
+							<div class="mdl-card mdl-shadow--4dp" style="height: 400px;">
+								<div class="mdl-card__title" style="height: 200px; background: url('images/walpaper_6.jpg'); background-size: cover;">
+								</div>
+								<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
+									<strong>Satela Material</strong> is Material CSS Framework inspired by Google Material http://getmdl.io. Satela material is Full Base Application Layout from list, table, form, select, and some fix for make it similar to <b>Bootstrap</b> behavior. The name also inspired by Cool Anime Series <b>Satela</b> from Re-Zero.
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/niltheresa/satela-material">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="mdl-cell mdl-cell--4-col">
+							<div class="mdl-card mdl-shadow--4dp" style="height: 400px;">
+								<div class="mdl-card__title" style="height: 200px; background: url('images/walpaper_7.jpg'); background-size: cover;">
+								</div>
+								<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
+									<strong>Mahiwal</strong> is Application that used both tools <b>Satela Material</b> + <b>Hybrid Starter</b>. It is simple Application where we can create some Questioner for Examination and print it for student or access by the Student itself. And Ofcourse since it Hybrid Application you can access in every platform.
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/niltheresa/satela-material">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+			</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+				<div class="mdl-cell mdl-cell--10-col">
+					<div class="" style="height: 200px; background: #84749B;">
+						<h2 style="color: #FFFFFF; padding: 50px;">My Current Work</h2>
+					</div>
+					<div class="mdl-grid" style="margin-top: -100px;">
+						<div class="mdl-cell mdl-cell--12-col" style="background: red;">
+							<div class="mdl-card mdl-shadow--4dp" style="height: 800px;">
+								<div class="mdl-card__title" style="height: 600px; background: url('images/walpaper_2.png'); background-size: cover;">
+								</div>
+								<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
+									<strong>Halonasoft</strong> is a web-based application designed to help provide convenience for your company in order to manage the Human Resources (HR). Provides functions Human Resources Information System (HRIS), which can provide efficiency and effectiveness, as well as allow you to organize labor data for the entire activity of each module stored properly centered Employee Master Data.
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://halonasoft.com/about/#/">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+			</div>
+			<div class="mdl-grid" id="game">
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+				<div class="mdl-cell mdl-cell--10-col">
+					<div class="" style="height: 200px; background: #84749B;">
+						<h2 style="color: #FFFFFF; padding: 50px;">MOEnster</h2>
+					</div>
+					<div class="mdl-grid" style="margin-top: -100px;">
+						<div class="mdl-cell mdl-cell--12-col" style="background: red;">
+							<div class="mdl-card mdl-shadow--4dp" style="height: 800px;">
+								<div class="mdl-card__title" style="height: 600px; background: url('images/walpaper_8.jpg'); background-size: cover;">
+								</div>
+								<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
+									<strong>MOEnster (3288)</strong> is Gun Girlz School Day my Official Guild. You can join my guild by Entering <b>3288</b> Code to Guild Form. MOEnster first founder is Me and <b>KogasakaYu</b> and then Helios strong players Join Us. Back then we are really weak. So they left me in guild but they back to help to restore Glory of MOEnster. Lot of strong member joined us. Until new Update the Hell Stage is come !. Everyone keep quiting Guild because we cannot Survive on Hell Stage. But no matter this guild became bad Condition I wont give up to make this Guild become number One.
+									<br>
+									<br>
+									<b>So Everyone who play in GGZ don't forget to join MOEnster. Im not active as other players but I always online to keep monitor my Guild.</b>
+									<br>
+									<br>
+									Gun Girlz has two Version one in Asia Server and other in Europe Server. <b>MOEnster is Guild from Asia server<b>
+									<br>
+									<br>
+								</div>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="alert('Website in on Progress thank for visit Guild Leader Ipulrvs')">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+				</div>
+			</div>
+		</main>
 	</div>
-	<main class="mdl-layout__content">
-		<div class="page-content">
-			<div class="mdl-grid mdl-shadow--2dp" style="padding-bottom: 20px;">
- 				<div class="mdl-cell mdl-cell--12-col" style="margin: 48px 24px; height: 320px;">
- 					<div class="flexslider" style="height: 320px;">
-						<ul class="slides">
-							<li>
-								<img src="images/walpaper_1.jpg" style="height: 320px;"/>
-								<!-- <p class="flex-caption">Caption</p> -->
-							</li>
-							<li>
-								<img src="images/walpaper_2.jpg" style="height: 320px;"/>
-							</li>
-							<li>
-								<img src="images/walpaper_3.jpg" style="height: 320px;"/>
-							</li>
-						</ul>
-					</div>
- 				</div>
-			</div>
-			<div class="mdl-grid space">
-				<div class="mdl-cell mdl-cell--12-col" style="background: #DFDFDF; text-align: center; vertical-align: middle;">
-					<h2>Introduce you to Lanscare Community !</h2>
-				</div>
-			</div>
-			<div class="mdl-grid space">
-				<div class="mdl-cell mdl-cell--4-col" >
-					<div class="mdl-card mdl-shadow--2dp">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Lanscare Labs</h2>
-						</div>
-						<div class="mdl-card__media">
-							<img src="images/walpaper_1.jpg" height="240">
-						</div>
-						<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
-							<b>Lanscare Labs</b> is my Personal best practice Technology Implementation that I have
-							already used. Its Repo Collections from boilerplate to example Application.
-							From every single program Language (Node.js, Java, Javascript, PHP etc.)
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Learn More
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="mdl-cell mdl-cell--4-col">
-					<div class="mdl-card mdl-shadow--2dp">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Revisa People</h2>
-						</div>
-						<div class="mdl-card__media">
-							<img src="images/walpaper_2.jpg" height="240">
-						</div>
-						<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
-							<b>Revisa People</b> is Huge Community of Real people who gather from all around
-							the world to share and tell their story/experience of their live. Start from You.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Learn More
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="mdl-cell mdl-cell--4-col">
-					<div class="mdl-card mdl-shadow--2dp">
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">MoeNster</h2>
-						</div>
-						<div class="mdl-card__media">
-							<img src="images/walpaper_3.jpg" height="240">
-						</div>
-						<div class="mdl-card__supporting-text" style="text-align: justify; height: 150px;">
-							<b>MoeNster</b> is Gaming Community that stand together to build greater experience of gaming. We build some guide from nothing to something. And also share news around platform game of current Updates.
-						</div>
-						<div class="mdl-card__actions">
-							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Learn More
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-</div>
 
 	<script src="source/jquery.js"></script>
 	<script src="source/material.js"></script>
@@ -137,11 +276,11 @@
 
 	<script type="text/javascript">
 		$(function (){
-			$('.flexslider').flexslider({
-				animation: "slide"
+			$('.slideshow').flexslider({
+				animation: "slide",
+				controlsContainer: $(".slideNavFunc"),
+    			customDirectionNav: $(".slideNav a")
 			});
-
-			alert("THIS SITE UNDER CONSTRUCTION !");
 		});
 	</script>
 </body>
